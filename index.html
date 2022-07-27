@@ -12,17 +12,48 @@
         href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Titillium+Web:wght@200;400;600&display=swap">
     <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/global.css" />
-    <title>Web App</title>
+    <title>Shell Game</title>
 </head>
 
 <body>
     <header>
         <img src="/assets/html_css_js.png">
-        <h1>Web App</h1>
+        <h1>Shell Game</h1>
     </header>
 
     <main>
-
+        <p class = "intro">Play my Shell Game!</p>
+        <section class = 'the-cups'>
+            <div class = 'cup-container'>
+                <div>
+                    <img src="/assets/cup.png" class = 'cup-pic' id="cup-one-pic">
+                </div>
+                <div>
+                    <button class = 'cup-button' id = 'cup-one-button'>Cup One</button>
+                </div>
+            </div>
+            <div class = 'cup-container'>
+                <div>
+                    <img src="/assets/cup.png" class = 'cup-pic' id="cup-two-pic">
+                </div>
+                <div>
+                    <button class = 'cup-button' id = "cup-two-button">Cup Two</button>
+                </div>
+            </div>
+            <div class = 'cup-container'>
+                <div>
+                    <img src="/assets/cup.png" class = 'cup-pic' id="cup-three-pic">
+                </div>
+                <div>
+                    <button class = 'cup-button' id = "cup-three-button">Cup Three</button>
+                </div>
+            </div>
+        </section>    
+        <p class = "scores">
+            Total times played:<span id="total-count"> 0</span><br>
+            Correct picks:<span id="correct-count"> 0</span><br>
+            Incorrect picks:<span id="incorrect-count"> 0</span><br>
+        </p>
     </main>
 
     <footer>&copy;2022 Software Developer</footer>
